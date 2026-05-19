@@ -32,6 +32,7 @@ A rede é modelada através de uma tabela de adjacência IP/Porta onde definimos
 ### Pré-requisitos
 * Python 3 instalado em todas as máquinas.
 * Uma rede virtual ativa (como o LogMeIn Hamachi) caso o teste seja feito em computadores geograficamente distantes.
+* O projeto utiliza apenas bibliotecas nativas do Python (Standard Library), logo, não é necessário instalar dependências externas via pip.
 
 ### Configuração
 1. Abra o arquivo `no_rede.py`.
@@ -52,3 +53,5 @@ python no_rede.py 2
 # Terminal 2
 python no_rede.py 3
 ```
+
+* Ao encerrar o processo do Nó 1 (Ctrl + C), você verá nos terminais da segunda máquina o gatilho automático de reeleição apurando as baterias dos nós restantes e declarando o novo coordenador.
